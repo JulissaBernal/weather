@@ -40,45 +40,16 @@ window.addEventListener('load',() =>{
                 vientoVelocidad.innerHTML=`${viento} m/s`
                 //muestra el icono
                 let desIcono=data.weather[0].main
-                console.log(desIcono)
-                switch (desIcono){
-                    case 'Thunderstorm':
-                        icono.src='animated/thunder.svg'
-                        console.log("tormenta")
-                        break;
-                    case 'Drizzle':
-                        icono.src='animated/rainy-2.svg'
-                        console.log("llovizna")
-                        break;
-                    case 'Rain':
-                        icono.src='animated/rainy-7.svg'
-                        console.log("lluvia")
-                        break;
-                    case 'Snow':
-                        icono.src='animated/snowy-6.svg'
-                        console.log("nieve")
-                        break;
-                    case 'Clear':
-                        icono.src='animated/day.svg'
-                        console.log("limpio")
-                        break;
-                    case 'Atmosphere':
-                        icono.src='animated/weather.svg'
-                        console.log("atmosfera")
-                        break;
-                    case 'Clouds':
-                        icono.src='animated/cloudy-day-1.svg'
-                        console.log("nubes")
-                        break;
-                    case 'Clouds':
-                        icono.src='animated/cloudy-day-1.svg'
-                        console.log("nubes")
-                        break;
-                    default:
-                        icono.src='animated/cloudy.day-1.svg'
-                        console.log("por defecto")
-                }
-            
+                //iconos
+                const obtnerIcono = {
+                        'Thunderstorm': icono.src='animated/thunder.svg',
+                        'Drizzle': icono.src='animated/rainy-2.svg',
+                        'Rain':  icono.src='animated/rainy-7.svg',
+                        'Snow': icono.src='animated/snowy-6.svg',
+                        'Clear':icono.src='animated/day.svg',
+                        'Atmosphere': icono.src='animated/weather.svg',
+                        'Clouds':icono.src='animated/cloudy-day-1.svg'
+                    };
             })
             .catch(error =>{
                 console.log(error)
