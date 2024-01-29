@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(16,60,231);
+    background: linear-gradient(90deg, rgba(16,60,231,1) 0%, rgba(100,233,255,1) 100%);
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 30px;
+    height:400px;
+    width:300px
+}
+.icon{
+    width: 200px
+}
+h1{
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
